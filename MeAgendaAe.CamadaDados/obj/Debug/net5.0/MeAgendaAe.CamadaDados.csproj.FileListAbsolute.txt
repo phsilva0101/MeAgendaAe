@@ -1,0 +1,15 @@
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.CamadaDados.deps.json
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.CamadaDados.runtimeconfig.json
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.CamadaDados.runtimeconfig.dev.json
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.CamadaDados.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\ref\MeAgendaAe.CamadaDados.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.CamadaDados.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.csproj.AssemblyReference.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.AssemblyInfoInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.AssemblyInfo.cs
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.csproj.CoreCompileInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\ref\MeAgendaAe.CamadaDados.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.genruntimeconfig.cache

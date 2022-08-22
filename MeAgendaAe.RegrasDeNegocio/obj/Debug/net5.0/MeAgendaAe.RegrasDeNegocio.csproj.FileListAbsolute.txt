@@ -1,0 +1,12 @@
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\bin\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.deps.json
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\bin\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\bin\Debug\net5.0\ref\MeAgendaAe.RegrasDeNegocio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\bin\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.csproj.AssemblyReference.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.AssemblyInfoInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.AssemblyInfo.cs
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\ref\MeAgendaAe.RegrasDeNegocio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.RegrasDeNegocio\obj\Debug\net5.0\MeAgendaAe.RegrasDeNegocio.pdb

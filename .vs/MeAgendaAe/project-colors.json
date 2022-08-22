@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "12ffdefa-7936-42d4-936b-b68f0129ea4e": {
+      "ProjectGuid": "12ffdefa-7936-42d4-936b-b68f0129ea4e",
+      "DisplayName": "MeAgendaAe",
+      "ColorIndex": 0
+    },
+    "8fd220b6-c204-415e-b166-4bba06f8df72": {
+      "ProjectGuid": "8fd220b6-c204-415e-b166-4bba06f8df72",
+      "DisplayName": "MeAgendaAe.Dominio",
+      "ColorIndex": 1
+    },
+    "46575ee1-3992-4557-8df6-3c19c211920b": {
+      "ProjectGuid": "46575ee1-3992-4557-8df6-3c19c211920b",
+      "DisplayName": "MeAgendaAe.CamadaDados",
+      "ColorIndex": 2
+    },
+    "09f5f23b-27dd-4513-8ce4-3c7a94f7b43e": {
+      "ProjectGuid": "09f5f23b-27dd-4513-8ce4-3c7a94f7b43e",
+      "DisplayName": "MeAgendaAe.RegrasDeNegocio",
+      "ColorIndex": 3
+    },
+    "49bd0346-bb90-402f-ba4a-e1e522cc70d8": {
+      "ProjectGuid": "49bd0346-bb90-402f-ba4a-e1e522cc70d8",
+      "DisplayName": "MeAgendaAe",
+      "ColorIndex": 4
+    },
+    "ee6fa31e-b44e-4637-93bd-6d976248a6a8": {
+      "ProjectGuid": "ee6fa31e-b44e-4637-93bd-6d976248a6a8",
+      "DisplayName": "MeAgendaAe.CrossCutting",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
