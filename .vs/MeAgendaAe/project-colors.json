@@ -30,7 +30,12 @@
       "ProjectGuid": "ee6fa31e-b44e-4637-93bd-6d976248a6a8",
       "DisplayName": "MeAgendaAe.CrossCutting",
       "ColorIndex": 5
+    },
+    "e041e269-1db0-4185-ab17-20575649d34f": {
+      "ProjectGuid": "e041e269-1db0-4185-ab17-20575649d34f",
+      "DisplayName": "MeAgendaAe",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

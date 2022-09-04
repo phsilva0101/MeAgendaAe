@@ -1,3 +1,6 @@
+using MeAgendaAe.CamadaDadosAcesso.Interfaces;
+using MeAgendaAe.CamadaDadosAcesso.Repositorio;
+using MeAgendaAe.CrossCutting.Config;
 using MeAgendaAe.CrossCutting.MetodosExtensao;
 using MeAgendaAe.CrossCutting.Settings;
 using Microsoft.AspNetCore.Builder;
@@ -32,6 +35,11 @@ namespace MeAgendaAe
             var appConfig = Configuration.Get<ConfiguracoesDoApp>();
 
             services.AdicionarBancoDeDados(appConfig);
+
+            services.AddScoped<IAgendamentoRepositorio, AgendamentoRepositorio>();
+            var mapper = MapperConfig.RegistrarMaps().CreateMapper();
+            services.AddSingleton(mapper);
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
