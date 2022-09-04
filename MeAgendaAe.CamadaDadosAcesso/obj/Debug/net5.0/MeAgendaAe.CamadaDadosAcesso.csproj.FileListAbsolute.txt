@@ -1,0 +1,17 @@
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.deps.json
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\ref\MeAgendaAe.CamadaDadosAcesso.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.CamadaDados.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.Dominio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.CamadaDados.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\bin\Debug\net5.0\MeAgendaAe.Dominio.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.csproj.AssemblyReference.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.AssemblyInfoInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.AssemblyInfo.cs
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.csproj.CoreCompileInputs.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.csproj.CopyComplete
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\ref\MeAgendaAe.CamadaDadosAcesso.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDadosAcesso\obj\Debug\net5.0\MeAgendaAe.CamadaDadosAcesso.pdb
