@@ -18,6 +18,8 @@ namespace MeAgendaAe.CrossCutting.Config
             {
                 config.CreateMap<TbAgendamentos, Agendamentos>().ReverseMap();
                 config.CreateMap<TbAgendamentos, DtoAgendamento>().ReverseMap();
+                config.CreateMap<TbCliente, Clientes>().ReverseMap();
+                config.CreateMap<TbEmpresas, Empresas>().ReverseMap();
             });
 
             return mappingsConfigs;
