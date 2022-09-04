@@ -19,6 +19,7 @@ namespace MeAgendaAe.CamadaDados.Context
         public DbSet<TbEmpresas> TbEmpresas { get; set; }
         public DbSet<TbEstados> TbEstados { get; set; }
         public DbSet<TbFormasPagamentos> TbFormasPagamentos { get; set; }
+        public DbSet<TbPaises> TbPaises { get; set; }
         public DbSet<TbPagamentos> TbPagamentos { get; set; }
         public DbSet<TbStatusAgendamentos> TbStatusAgendamentos { get; set; }
         public DbSet<TbUsuarios> TbUsuarios { get; set; }
