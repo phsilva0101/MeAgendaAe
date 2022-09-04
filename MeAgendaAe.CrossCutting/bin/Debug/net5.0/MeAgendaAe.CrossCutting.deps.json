@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "MeAgendaAe.CrossCutting/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
           "MeAgendaAe.CamadaDados": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.17",
@@ -19,6 +20,17 @@
         },
         "runtime": {
           "MeAgendaAe.CrossCutting.dll": {}
+        }
+      },
+      "AutoMapper/11.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
         }
       },
       "EntityFramework/5.0.0": {
@@ -1250,12 +1262,18 @@
       "MeAgendaAe.CamadaDados/1.0.0": {
         "dependencies": {
           "EntityFramework": "5.0.0",
+          "MeAgendaAe.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "runtime": {
           "MeAgendaAe.CamadaDados.dll": {}
+        }
+      },
+      "MeAgendaAe.Dominio/1.0.0": {
+        "runtime": {
+          "MeAgendaAe.Dominio.dll": {}
         }
       }
     }
@@ -1265,6 +1283,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
+      "path": "automapper/11.0.1",
+      "hashPath": "automapper.11.0.1.nupkg.sha512"
     },
     "EntityFramework/5.0.0": {
       "type": "package",
@@ -2037,6 +2062,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "MeAgendaAe.CamadaDados/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeAgendaAe.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

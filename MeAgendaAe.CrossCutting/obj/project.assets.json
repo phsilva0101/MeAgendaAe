@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AutoMapper/11.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework/5.0.0": {
         "type": "package",
         "compile": {
@@ -1732,6 +1744,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "EntityFramework": "5.0.0",
+          "MeAgendaAe.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
@@ -1742,10 +1755,35 @@
         "runtime": {
           "bin/placeholder/MeAgendaAe.CamadaDados.dll": {}
         }
+      },
+      "MeAgendaAe.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MeAgendaAe.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MeAgendaAe.Dominio.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/11.0.1": {
+      "sha512": "WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
+      "type": "package",
+      "path": "automapper/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.11.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "EntityFramework/5.0.0": {
       "sha512": "WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
       "type": "package",
@@ -6306,10 +6344,16 @@
       "type": "project",
       "path": "../MeAgendaAe.CamadaDados/MeAgendaAe.CamadaDados.csproj",
       "msbuildProject": "../MeAgendaAe.CamadaDados/MeAgendaAe.CamadaDados.csproj"
+    },
+    "MeAgendaAe.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../MeAgendaAe.Dominio/MeAgendaAe.Dominio.csproj",
+      "msbuildProject": "../MeAgendaAe.Dominio/MeAgendaAe.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AutoMapper >= 11.0.1",
       "MeAgendaAe.CamadaDados >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
@@ -6372,6 +6416,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.17, )"

@@ -16,3 +16,5 @@ C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\o
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\obj\Debug\net5.0\ref\MeAgendaAe.CrossCutting.dll
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\obj\Debug\net5.0\MeAgendaAe.CrossCutting.pdb
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\obj\Debug\net5.0\MeAgendaAe.CrossCutting.genruntimeconfig.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\bin\Debug\net5.0\MeAgendaAe.Dominio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CrossCutting\bin\Debug\net5.0\MeAgendaAe.Dominio.pdb
