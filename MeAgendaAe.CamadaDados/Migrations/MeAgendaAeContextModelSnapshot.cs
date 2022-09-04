@@ -29,22 +29,28 @@ namespace MeAgendaAe.CamadaDados.Migrations
                     b.Property<DateTime>("DataAgendamento")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Dia")
+                    b.Property<string>("DiaSemana")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<TimeSpan>("Horario")
                         .HasColumnType("time");
 
+                    b.Property<long>("IdCliente")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("IdEmpresa")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("NomeCliente")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("IdStatusAgendamento")
+                        .HasColumnType("bigint");
 
                     b.HasKey("IdAgendamento");
 
+                    b.HasIndex("IdCliente");
+
                     b.HasIndex("IdEmpresa");
+
+                    b.HasIndex("IdStatusAgendamento");
 
                     b.ToTable("TbAgendamentos");
                 });
@@ -63,6 +69,70 @@ namespace MeAgendaAe.CamadaDados.Migrations
                     b.HasKey("IdCidades");
 
                     b.ToTable("TbCidades");
+                });
+
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbCliente", b =>
+                {
+                    b.Property<long>("IdCliente")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("IdCidade")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("IdEstado")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("IdUsuario")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Idade")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsAtivo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("QtdVisitas")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdCliente");
+
+                    b.HasIndex("IdCidade");
+
+                    b.HasIndex("IdEstado");
+
+                    b.HasIndex("IdUsuario")
+                        .IsUnique();
+
+                    b.ToTable("TbCliente");
                 });
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbConfiguracoes", b =>
@@ -163,6 +233,22 @@ namespace MeAgendaAe.CamadaDados.Migrations
                     b.ToTable("TbPagamentos");
                 });
 
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbStatusAgendamentos", b =>
+                {
+                    b.Property<long>("IdStatusAgendamento")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdStatusAgendamento");
+
+                    b.ToTable("TbStatusAgendamentos");
+                });
+
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbUsuarios", b =>
                 {
                     b.Property<long>("IdUsuario")
@@ -170,17 +256,7 @@ namespace MeAgendaAe.CamadaDados.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Celular")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DataInclusao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataNascimento")
+                    b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -188,41 +264,97 @@ namespace MeAgendaAe.CamadaDados.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Foto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAtivo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("IdCidade")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("IdEstado")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("PrimeiroNome")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UltimoNome")
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("TbCidadesIdCidades")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("TbEstadosIdEstado")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdUsuario");
 
-                    b.HasIndex("IdCidade");
+                    b.HasIndex("TbCidadesIdCidades");
 
-                    b.HasIndex("IdEstado");
+                    b.HasIndex("TbEstadosIdEstado");
 
                     b.ToTable("TbUsuarios");
                 });
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbAgendamentos", b =>
                 {
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbCliente", "TbCliente")
+                        .WithMany("TbAgendamentos")
+                        .HasForeignKey("IdCliente")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbEmpresas", "TbEmpresas")
                         .WithMany("TbAgendamentos")
                         .HasForeignKey("IdEmpresa")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbStatusAgendamentos", "TbStatusAgendamentos")
+                        .WithMany("TbAgendamentos")
+                        .HasForeignKey("IdStatusAgendamento")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TbCliente");
+
                     b.Navigation("TbEmpresas");
+
+                    b.Navigation("TbStatusAgendamentos");
+                });
+
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbCliente", b =>
+                {
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbCidades", "TbCidades")
+                        .WithMany("TbCliente")
+                        .HasForeignKey("IdCidade")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbEstados", "TbEstados")
+                        .WithMany("TbCliente")
+                        .HasForeignKey("IdEstado")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbUsuarios", "TbUsuarios")
+                        .WithOne("TbCliente")
+                        .HasForeignKey("MeAgendaAe.CamadaDados.Tabelas.TbCliente", "IdUsuario")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TbCidades");
+
+                    b.Navigation("TbEstados");
+
+                    b.Navigation("TbUsuarios");
                 });
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbEmpresas", b =>
@@ -230,13 +362,13 @@ namespace MeAgendaAe.CamadaDados.Migrations
                     b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbCidades", "TbCidades")
                         .WithMany("TbEmpresas")
                         .HasForeignKey("IdCidade")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbEstados", "TbEstados")
                         .WithMany("TbEmpresas")
                         .HasForeignKey("IdEstado")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("TbCidades");
@@ -249,7 +381,7 @@ namespace MeAgendaAe.CamadaDados.Migrations
                     b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbFormasPagamentos", "TbFormasPagamentos")
                         .WithMany("TbPagamentos")
                         .HasForeignKey("IdFormaPagamento")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("TbFormasPagamentos");
@@ -257,28 +389,29 @@ namespace MeAgendaAe.CamadaDados.Migrations
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbUsuarios", b =>
                 {
-                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbCidades", "TbCidades")
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbCidades", null)
                         .WithMany("TbUsuarios")
-                        .HasForeignKey("IdCidade")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TbCidadesIdCidades")
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbEstados", "TbEstados")
+                    b.HasOne("MeAgendaAe.CamadaDados.Tabelas.TbEstados", null)
                         .WithMany("TbUsuarios")
-                        .HasForeignKey("IdEstado")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("TbCidades");
-
-                    b.Navigation("TbEstados");
+                        .HasForeignKey("TbEstadosIdEstado")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbCidades", b =>
                 {
+                    b.Navigation("TbCliente");
+
                     b.Navigation("TbEmpresas");
 
                     b.Navigation("TbUsuarios");
+                });
+
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbCliente", b =>
+                {
+                    b.Navigation("TbAgendamentos");
                 });
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbEmpresas", b =>
@@ -288,6 +421,8 @@ namespace MeAgendaAe.CamadaDados.Migrations
 
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbEstados", b =>
                 {
+                    b.Navigation("TbCliente");
+
                     b.Navigation("TbEmpresas");
 
                     b.Navigation("TbUsuarios");
@@ -296,6 +431,16 @@ namespace MeAgendaAe.CamadaDados.Migrations
             modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbFormasPagamentos", b =>
                 {
                     b.Navigation("TbPagamentos");
+                });
+
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbStatusAgendamentos", b =>
+                {
+                    b.Navigation("TbAgendamentos");
+                });
+
+            modelBuilder.Entity("MeAgendaAe.CamadaDados.Tabelas.TbUsuarios", b =>
+                {
+                    b.Navigation("TbCliente");
                 });
 #pragma warning restore 612, 618
         }

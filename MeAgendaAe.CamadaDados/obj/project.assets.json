@@ -1564,6 +1564,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "MeAgendaAe.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MeAgendaAe.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MeAgendaAe.Dominio.dll": {}
+        }
       }
     }
   },
@@ -5919,11 +5929,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "MeAgendaAe.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../MeAgendaAe.Dominio/MeAgendaAe.Dominio.csproj",
+      "msbuildProject": "../MeAgendaAe.Dominio/MeAgendaAe.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "EntityFramework >= 5.0.0",
+      "MeAgendaAe.Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
@@ -5965,7 +5981,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\paulo\\OneDrive\\Documentos\\Projetos\\MeAgendaAe\\MeAgendaAe.Dominio\\MeAgendaAe.Dominio.csproj": {
+              "projectPath": "C:\\Users\\paulo\\OneDrive\\Documentos\\Projetos\\MeAgendaAe\\MeAgendaAe.Dominio\\MeAgendaAe.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

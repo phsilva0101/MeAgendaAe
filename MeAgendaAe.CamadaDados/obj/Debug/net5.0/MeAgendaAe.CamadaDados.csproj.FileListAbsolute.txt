@@ -13,3 +13,6 @@ C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\ob
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\ref\MeAgendaAe.CamadaDados.dll
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.pdb
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.genruntimeconfig.cache
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.Dominio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\bin\Debug\net5.0\MeAgendaAe.Dominio.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.CamadaDados\obj\Debug\net5.0\MeAgendaAe.CamadaDados.csproj.CopyComplete

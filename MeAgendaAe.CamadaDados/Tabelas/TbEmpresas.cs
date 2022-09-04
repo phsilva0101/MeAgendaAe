@@ -11,6 +11,7 @@ namespace MeAgendaAe.CamadaDados.Tabelas
     public class TbEmpresas
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long IdEmpresa { get; set; }
 
         [Required]

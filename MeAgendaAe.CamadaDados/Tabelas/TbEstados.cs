@@ -17,5 +17,6 @@ namespace MeAgendaAe.CamadaDados.Tabelas
 
         public virtual ICollection< TbUsuarios> TbUsuarios { get; set; }
         public virtual ICollection< TbEmpresas> TbEmpresas { get; set; }
+        public virtual ICollection< TbCliente> TbCliente { get; set; }
     }
 }

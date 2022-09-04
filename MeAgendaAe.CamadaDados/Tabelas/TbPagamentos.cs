@@ -18,6 +18,7 @@ namespace MeAgendaAe.CamadaDados.Tabelas
         public int IdFormaPagamento { get; set; }
 
         [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18,2)")]
         [Required]
         public decimal ValorTotal { get; set; }
 

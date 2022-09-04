@@ -14,39 +14,35 @@ namespace MeAgendaAe.CamadaDados.Tabelas
         public long IdUsuario { get; set; }
 
         [Required]
-        public string PrimeiroNome { get; set; }
+        public string Username { get; set; }
 
         [Required]
-        public string UltimoNome { get; set; }
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        public string Role { get; set; }
+
+        [Required]
+        public string Nome { get; set; }
+
+        [Required]
+        public string Sobrenome { get; set; }
+
+        [Required]
+        public bool IsAtivo { get; set; }
 
         [Required]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required]
-        [DataType(DataType.PhoneNumber)]
-        public string Celular { get; set; }
-
-        [Required]
         [DataType(DataType.ImageUrl)]
         public string Foto { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        public DateTime DataNascimento { get; set; }
+        public DateTime DataCadastro { get; set; }
 
-        [Required]
-        [DataType(DataType.Date)]
-        public DateTime DataInclusao { get; set; }
-        public bool Ativo { get; set; }
+        public virtual TbCliente TbCliente { get; set; }
 
-        [ForeignKey("TbCidades")]
-        public long IdCidade { get; set; }
-        public virtual TbCidades TbCidades { get; set; }
-
-
-        [ForeignKey("TbEstados")]
-        public long IdEstado { get; set; }
-        public virtual TbEstados TbEstados { get; set; }
     }
 }
