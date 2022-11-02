@@ -16,6 +16,7 @@ namespace MeAgendaAe.CrossCutting.Settings
         public bool IsMySQL => TipoConexao.ToUpper().Equals("MYSQL");
 
         public ConnectionStrings ConnectionStrings { get; set; }
+        public RabbitMq RabbitMQ { get; set; }
     }
 
     public class ConnectionStrings
@@ -24,5 +25,11 @@ namespace MeAgendaAe.CrossCutting.Settings
         public string ORACLE { get; set; }
         public string POSTGRE { get; set; }
         public string MYSQL { get; set; }
+    }
+
+    public class RabbitMq
+    {
+        public string Host { get; set; }
+        public string Queue { get; set; }
     }
 }

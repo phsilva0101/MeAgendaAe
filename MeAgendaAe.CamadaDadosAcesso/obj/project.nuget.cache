@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "ca5FCAnJZP22+SRBSeuyXbIBD1YQFIQ1QzArmIoRE93tZ0JKQhfRoVWKvqiF+XsXQBQEYTIucREgmJLzG4n3qw==",
-  "success": true,
+  "dgSpecHash": "EWmY6Q9H8K4+Pyscd4VdCEclbOkyIWfWwjgVHHkpthOkMk8aG+Qv26MZJJq99FwtJMhvEJ3FmT3JHSgGsYB4HA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\paulo\\OneDrive\\Documentos\\Projetos\\MeAgendaAe\\MeAgendaAe.CamadaDadosAcesso\\MeAgendaAe.CamadaDadosAcesso.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paulo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
@@ -109,8 +109,17 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: AutoMapper from 12.0.0 to 11.0.1. Reference the package directly from the project to select a different version. \r\n MeAgendaAe.CamadaDadosAcesso -> MeAgendaAe.CamadaDados -> AutoMapper (>= 12.0.0) \r\n MeAgendaAe.CamadaDadosAcesso -> AutoMapper (>= 11.0.1)",
+      "libraryId": "AutoMapper",
       "targetGraphs": [
         "net5.0"
       ]

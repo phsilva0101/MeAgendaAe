@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qssn27dlnXxLvCwJpvt1yvvd7Es1OSkZuB9BNr9TEmsRBcCDOAJxeTl2+oxE33Y1fkbb5zXjA6fGuooumQHPqA==",
+  "dgSpecHash": "O6CO16Vbbk3TN3+xrqUhuIHcRSADWZAhvrtsTELs23Pwks+ZPbw5BCusMo0ueF84OeFyLn1RMGaFBtoRiXqOlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\paulo\\OneDrive\\Documentos\\Projetos\\MeAgendaAe\\MeAgendaAe.CamadaDados\\MeAgendaAe.CamadaDados.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\paulo\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -111,10 +112,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
-        "net5.0"
+        "net6.0"
       ]
     }
   ]

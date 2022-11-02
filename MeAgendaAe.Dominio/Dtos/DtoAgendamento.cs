@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MeAgendaAe.Dominio.Enums;
 
 namespace MeAgendaAe.Dominio.Dtos
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MeAgendaAe.CamadaDados.Migrations
+namespace MeAgendaAe.Dominio.Migrations
 {
     public partial class AddNewTable : Migration
     {

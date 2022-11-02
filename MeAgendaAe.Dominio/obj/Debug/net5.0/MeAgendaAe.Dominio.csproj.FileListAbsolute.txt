@@ -1,6 +1,5 @@
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\bin\Debug\net5.0\MeAgendaAe.Dominio.deps.json
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\bin\Debug\net5.0\MeAgendaAe.Dominio.dll
-C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\bin\Debug\net5.0\ref\MeAgendaAe.Dominio.dll
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\bin\Debug\net5.0\MeAgendaAe.Dominio.pdb
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.csproj.AssemblyReference.cache
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.GeneratedMSBuildEditorConfig.editorconfig
@@ -8,5 +7,6 @@ C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\De
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.AssemblyInfo.cs
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.dll
-C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\ref\MeAgendaAe.Dominio.dll
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\refint\MeAgendaAe.Dominio.dll
 C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\MeAgendaAe.Dominio.pdb
+C:\Users\paulo\OneDrive\Documentos\Projetos\MeAgendaAe\MeAgendaAe.Dominio\obj\Debug\net5.0\ref\MeAgendaAe.Dominio.dll

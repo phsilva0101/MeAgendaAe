@@ -1,44 +1,147 @@
-﻿using MeAgendaAe.CamadaDados.Tabelas;
+﻿using AutoMapper;
+using MeAgendaAe.Dominio.Context;
+using MeAgendaAe.Dominio.Tabelas;
 using MeAgendaAe.CamadaDadosAcesso.Interfaces;
 using MeAgendaAe.Dominio.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MeAgendaAe.Dominio.Entidades;
 
 namespace MeAgendaAe.CamadaDadosAcesso.Repositorio
 {
     public class EmpresaRepositorio : IEmpresasRepositorio
     {
-        public Task<Empresas> AdicionarEmpresa(TbEmpresas tbEmpresas)
+        private readonly MeAgendaAeContext _context;
+        private IMapper _mapper;
+        public EmpresaRepositorio(MeAgendaAeContext context, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
+        }
+        public async Task<Empresas> AdicionarEmpresa(TbEmpresas tbEmpresas)
+        {
+            try
+            {
+                TbEmpresas empresa = await _context.TbEmpresas.Where(x => x.NomeEmpresa == tbEmpresas.NomeEmpresa).FirstOrDefaultAsync();
+
+                if (empresa != null)
+                    return null;
+
+                await _context.TbEmpresas.AddAsync(tbEmpresas);
+                await _context.SaveChangesAsync();
+
+                return _mapper.Map<Empresas>(tbEmpresas);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
-        public Task<Empresas> AtualizarEmpresa(TbEmpresas tbEmpresas)
+        public async Task<Empresas> AtualizarEmpresa(TbEmpresas tbEmpresas)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TbEmpresas empresa = await _context.TbEmpresas.Where(x => x.IdEmpresa == tbEmpresas.IdEmpresa).FirstOrDefaultAsync();
+
+                if (empresa == null)
+                    return null;
+
+                 _context.TbEmpresas.Update(tbEmpresas);
+                await _context.SaveChangesAsync();
+
+                return _mapper.Map<Empresas>(tbEmpresas);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
-        public Task<bool> ExcluirEmpresa(long idEmpresa)
+        public async Task<bool> ExcluirEmpresa(long idEmpresa)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TbEmpresas empresa = await _context.TbEmpresas.Where(x => x.IdEmpresa == idEmpresa).FirstOrDefaultAsync();
+
+                if (empresa == null)
+                    return false;
+
+                _context.TbEmpresas.Remove(empresa);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+    
+
+        public async Task<bool> InativarEmpresa(long idEmpresa, bool isAtivo)
+        {
+            try
+            {
+                TbEmpresas empresa = await _context.TbEmpresas.Where(x => x.IdEmpresa == idEmpresa).FirstOrDefaultAsync();
+
+                if (empresa == null)
+                    return false;
+
+                empresa.Ativo = isAtivo;
+                _context.TbEmpresas.Update(empresa);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
-        public Task<bool> InativarEmpresa(long idEmpresa)
+        public async Task<Empresas> ObterEmpresas()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<TbEmpresas> empresas = await _context.TbEmpresas.AsNoTracking().ToListAsync();
+
+                if (empresas == null)
+                    return null;
+
+                return _mapper.Map<Empresas>(empresas);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
-        public Task<Empresas> ObterEmpresas()
+        public async Task<Empresas> ObterEmpresasPorId(long idEmpresa)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                TbEmpresas empresa = await _context.TbEmpresas.Where(x => x.IdEmpresa == idEmpresa).AsNoTracking().FirstOrDefaultAsync();
 
-        public Task<Empresas> ObterEmpresasPorId(long idEmpresa)
-        {
-            throw new NotImplementedException();
+                if (empresa == null)
+                    return null;
+
+                return _mapper.Map<Empresas>(empresa);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

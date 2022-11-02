@@ -35,7 +35,17 @@
       "ProjectGuid": "e041e269-1db0-4185-ab17-20575649d34f",
       "DisplayName": "MeAgendaAe",
       "ColorIndex": 6
+    },
+    "c1f4dacf-b459-4414-bb72-ddc3482386de": {
+      "ProjectGuid": "c1f4dacf-b459-4414-bb72-ddc3482386de",
+      "DisplayName": "MeAgendaAe.CamadaDadosAcesso",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }

@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
-using MeAgendaAe.CamadaDados.Tabelas;
 using MeAgendaAe.Dominio.Dtos;
+using MeAgendaAe.Dominio.Entidades;
 using MeAgendaAe.Dominio.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MeAgendaAe.Dominio.ViewModel.Clientes.Saida;
+using MeAgendaAe.Dominio.ViewModel.Empresas.Saida;
 
 namespace MeAgendaAe.CrossCutting.Config
 {
@@ -18,8 +20,8 @@ namespace MeAgendaAe.CrossCutting.Config
             {
                 config.CreateMap<TbAgendamentos, Agendamentos>().ReverseMap();
                 config.CreateMap<TbAgendamentos, DtoAgendamento>().ReverseMap();
-                config.CreateMap<TbCliente, Clientes>().ReverseMap();
-                config.CreateMap<TbEmpresas, Empresas>().ReverseMap();
+                config.CreateMap<TbCliente, ClientesModel>().ReverseMap();
+                config.CreateMap<TbEmpresas, EmpresasModel>().ReverseMap();
             });
 
             return mappingsConfigs;

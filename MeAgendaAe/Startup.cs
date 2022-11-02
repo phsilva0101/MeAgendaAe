@@ -1,8 +1,10 @@
+using MeAgendaAe.Dominio.Repositorio;
 using MeAgendaAe.CamadaDadosAcesso.Interfaces;
 using MeAgendaAe.CamadaDadosAcesso.Repositorio;
 using MeAgendaAe.CrossCutting.Config;
 using MeAgendaAe.CrossCutting.MetodosExtensao;
 using MeAgendaAe.CrossCutting.Settings;
+using MeAgendaAe.Dominio.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

@@ -1,4 +1,4 @@
-﻿using MeAgendaAe.CamadaDados.Context;
+﻿using MeAgendaAe.Dominio.Context;
 using MeAgendaAe.CrossCutting.Settings;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;

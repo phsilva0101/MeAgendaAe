@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
-using MeAgendaAe.CamadaDados.Context;
-using MeAgendaAe.CamadaDados.Tabelas;
+using MeAgendaAe.Dominio.Context;
+using MeAgendaAe.Dominio.Tabelas;
 using MeAgendaAe.CamadaDadosAcesso.Interfaces;
+using MeAgendaAe.Dominio.Entidades;
 using MeAgendaAe.Dominio.Model;
 using Microsoft.EntityFrameworkCore;
 using System;

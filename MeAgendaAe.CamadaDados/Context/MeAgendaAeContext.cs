@@ -1,9 +1,9 @@
-﻿using MeAgendaAe.CamadaDados.Tabelas;
+﻿using MeAgendaAe.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
-namespace MeAgendaAe.CamadaDados.Context
+namespace MeAgendaAe.Dominio.Context
 {
     public class MeAgendaAeContext : DbContext
     {
