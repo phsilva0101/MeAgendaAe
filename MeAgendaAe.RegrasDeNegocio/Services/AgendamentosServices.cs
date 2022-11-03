@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MeAgendaAe.CamadaDadosAcesso.Interfaces;
 using MeAgendaAe.Dominio.Base;
 using MeAgendaAe.Dominio.Context;
 using MeAgendaAe.Dominio.Entidades;
@@ -20,14 +21,19 @@ namespace MeAgendaAe.RegrasDeNegocio.Services
     public class AgendamentosServices : IAgendamentosServices
     {
         private readonly IAgendamentoRepositorio _agendamentoRepo;
+        private readonly IClienteRepositorio _clienteRepo;
         private readonly IUnidadeDeTrabalhoRepositorio<MeAgendaAeContext> _unidTrabRepo;
         private readonly IMapper _mapper;
 
-        public AgendamentosServices(IAgendamentoRepositorio agendamentoRepo, IMapper mapper, IUnidadeDeTrabalhoRepositorio<MeAgendaAeContext> unidadeDeTrabalhoRepositorio)
+        public AgendamentosServices(IAgendamentoRepositorio agendamentoRepo, 
+            IMapper mapper, 
+            IUnidadeDeTrabalhoRepositorio<MeAgendaAeContext> unidadeDeTrabalhoRepositorio,
+            IClienteRepositorio clienteRepositorio)
         {
             _agendamentoRepo = agendamentoRepo;
             _mapper = mapper;
             _unidTrabRepo = unidadeDeTrabalhoRepositorio;
+            _clienteRepo = clienteRepositorio;
         }
 
         public async Task<Agendamentos> CancelarAgendamento(CancelarAgendamentoRequestViewModel requestViewModel, CancellationToken cancellationToken)
@@ -48,7 +54,10 @@ namespace MeAgendaAe.RegrasDeNegocio.Services
             var entidade = await _agendamentoRepo.ObterAgendamentoPorId(id, cancellationToken);
 
             entidade.IdStatusAgendamento = (long)EnumStatusAgendamento.Finalizado;
-            entidade.TbCliente.QtdVisitas += 1;
+
+            var cliente = await _clienteRepo.ObterClientesPorId(entidade.IdCliente, cancellationToken);
+
+            cliente.QtdVisitas += 1;
 
             await _unidTrabRepo.CommitarTransacao(cancellationToken);
 

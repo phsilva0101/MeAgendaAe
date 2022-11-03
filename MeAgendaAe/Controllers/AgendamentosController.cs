@@ -108,7 +108,7 @@ namespace MeAgendaAe.Controllers
         [ProducesResponseType(typeof(List<Agendamentos>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(List<Agendamentos>), StatusCodes.Status404NotFound)]
 
-        public async Task<IActionResult> AtualizarAgendamento(CancelarAgendamentoRequestViewModel request, CancellationToken cancellation)
+        public async Task<IActionResult> CancelarAgendamento(CancelarAgendamentoRequestViewModel request, CancellationToken cancellation)
         {
             try
             {
@@ -130,7 +130,7 @@ namespace MeAgendaAe.Controllers
             }
         }
 
-        [HttpDelete("api/agendamentos/finalizarAgendamento/{idAgendamento}")]
+        [HttpPut("api/agendamentos/finalizarAgendamento/{idAgendamento}")]
         [ProducesResponseType(typeof(List<Agendamentos>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<Agendamentos>), StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(typeof(List<Agendamentos>), StatusCodes.Status404NotFound)]
@@ -154,5 +154,6 @@ namespace MeAgendaAe.Controllers
                 return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
     }
 }
